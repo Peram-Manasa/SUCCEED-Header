@@ -45,7 +45,7 @@ const Headercomponent = (props: any) => {
             className="navItemActive"
             onClick={() =>
               window.open(
-                `https://zelarsoft1.sharepoint.com/sites/${param.site}`,
+                `${props.siteabsUrl}${param.site}`,
                 "_self"
               )
             }
@@ -69,7 +69,7 @@ const Headercomponent = (props: any) => {
             className="navItem"
             onClick={() =>
               window.open(
-                `https://zelarsoft1.sharepoint.com/sites/${param.site}`,
+                `${props.siteabsUrl}/${param.site}`,
                 "_self"
               )
             }
@@ -80,7 +80,7 @@ const Headercomponent = (props: any) => {
           <div
             className="navItem"
             onClick={() =>
-              window.open(`${props.siteabsUrl}${param.site}`, "_blank")
+              window.open(`${props.siteabsUrl}/${param.site}`, "_self")
             }
           >
             {" "}
